@@ -1,0 +1,17 @@
+{
+    "name": "nickfelker/sitemapgen",
+    "description": "lib for creating site`s map in three formats: xml, json, csv",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nickfelker"
+        }
+    ],
+    "minimum-stability": "dev",
+
+    "require": {
+        "php": ">=7.1.0"
+    }
+}
+
