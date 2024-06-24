@@ -24,7 +24,7 @@
         }
         // fill main lib data (an associative array)
 
-        function __construct($sitename, $file_generation_type, $file_path, $pages_arr){
+        function __construct($sitename = "sitename", $file_generation_type = "xml", $file_path = "./result", $pages_arr = array()){
             print('Map generator constuctor\n');
             $this->sitename = $sitename;
             $this->file_generation_type = $file_generation_type;
@@ -32,6 +32,7 @@
             $this->pages_arr = $pages_arr;
             $this->create_map();
         }
+
 
 
         // setters
