@@ -1,0 +1,6 @@
+# Documentation to lib
+Using this lib may two ways:
+1. Using construct with params (sitename, file_generation_type, file_path, pages_arr)
+after lib auto create folder (if it is not exist) and result file
+2. Using setters methods to install needed fields for next work
+after call create_map method which will create folder (if it is not exist) and result file
