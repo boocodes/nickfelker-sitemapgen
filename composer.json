@@ -3,7 +3,7 @@
     "description": "lib for creating site`s map in three formats: xml, json, csv",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "stable",
+   
     "authors": [
         {
             "name": "nickfelker"
