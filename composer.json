@@ -9,7 +9,7 @@
             "name": "nickfelker"
         }
     ],
-    "prefer-stable" : "true",
+    "prefer-stable" : true,
     "require": {
         "php": ">=7.1.0"
     }
