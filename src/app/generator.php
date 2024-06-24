@@ -9,13 +9,13 @@
 
 
     class MapGenerator{
-        private string $sitename = "sitename";
+        private $sitename = "sitename";
 
-        private string $file_generation_type = "xml";
+        private $file_generation_type = "xml";
         // xml, csv, json. Default - xml
-        private string $file_path;
+        private $file_path;
         // for ex : /var/www/site.ru/upload/sitemap.xml
-        private bool $if_folder_not_exist_create = true;
+        private $if_folder_not_exist_create = true;
         // creating folder to file or not (if not - throw an error)
         private $pages_arr = array();
         // main lib data to gen map
@@ -23,6 +23,17 @@
             array_push($this->pages_arr, $arr);
         }
         // fill main lib data (an associative array)
+
+        function __construct($sitename, $file_generation_type, $file_path, $pages_arr){
+            print('Map generator constuctor\n');
+            $this->sitename = $sitename;
+            $this->file_generation_type = $file_generation_type;
+            $this->file_path = $file_path;
+            $this->pages_arr = $pages_arr;
+            $this->create_map();
+        }
+
+
         // setters
         public function set_file_generation_type($file_generation_type){
             $this->file_generation_type = $file_generation_type;
