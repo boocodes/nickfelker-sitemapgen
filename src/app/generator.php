@@ -180,10 +180,7 @@
                 if(!empty($data['changefreq'])){
                     $result .= $data['changefreq'] . ";";
                 }
-                // delete symbol ; at end of row
-                if($result[strlen($result) - 1] == ";"){
-                    $result = $result.substr($result, 0, -1);
-                }
+
                 $result .= "\n";
             }
             $this->create_result_file($result, 'csv');
