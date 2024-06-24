@@ -30,7 +30,9 @@
             $this->file_generation_type = $file_generation_type;
             $this->file_path = $file_path;
             $this->pages_arr = $pages_arr;
-            $this->create_map();
+            if(!empty($pages_arr)){
+                $this->create_map();
+            }
         }
 
 
