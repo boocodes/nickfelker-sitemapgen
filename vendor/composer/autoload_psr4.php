@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Nickfelker\\Sitemapgen\\' => array($baseDir . '/src'),
+    'nickfelker\\sitemapgen\\' => array($baseDir . '/app'),
 );

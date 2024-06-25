@@ -7,7 +7,6 @@
 
     require_once('exceptions/index.php');
 
-
     class MapGenerator{
         private $sitename = "sitename";
 
